@@ -1,7 +1,7 @@
 package org.com.domain;
 
 public class Member {
-    private Long id;
+    private int id;
 
     private String name;
 
@@ -10,13 +10,11 @@ public class Member {
     private String panties;
     private String socks;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(int id) { this.id = id;}
 
     public String getName() {
         return name;
@@ -57,4 +55,20 @@ public class Member {
     public void setSocks(String socks) {
         this.socks = socks;
     }
+
+    public static void main(String[] args){
+        Member han = new Member();
+        han.setId(201810896);
+        han.setName("hankyuhyun");
+        han.setBottom("uniqlo");
+        han.setSocks("nike");
+        han.setTop("uniqlo");
+        han.setPanties("Kalvin_Cline");
+        System.out.println("han's name:"+han.name);
+        System.out.println("han's id:"+han.id);
+        System.out.println("han's top:"+han.top);
+        System.out.println("han's bottom:"+han.bottom);
+        System.out.println("han's panties:"+han.panties);
+    }
 }
+
