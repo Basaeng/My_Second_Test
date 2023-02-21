@@ -5,5 +5,5 @@ import org.com.domain.Member;
 public interface ourFashion {
 
     Member clothes(Member member);
-    String favorite(Member member);
+    //String favorite(Member member);
 }
