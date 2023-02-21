@@ -48,5 +48,6 @@ public class Member {
         this.socks = socks;
     }
 
+
 }
 
