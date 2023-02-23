@@ -11,7 +11,7 @@ public class kyuhyunService implements ourFashion {
     }
 
     @Override
-    public String favorite(Member member) {
+    public String favorite(String pieces) {
         return null;
     }
 

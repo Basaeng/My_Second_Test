@@ -48,6 +48,17 @@ public class Member {
         this.socks = socks;
     }
 
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", top='" + top + '\'' +
+                ", bottom='" + bottom + '\'' +
+                ", panties='" + panties + '\'' +
+                ", socks='" + socks + '\'' +
+                '}';
+    }
 
 }
 
