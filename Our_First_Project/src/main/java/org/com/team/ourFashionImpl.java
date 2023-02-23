@@ -14,6 +14,7 @@ public class ourFashionImpl implements ourFashion {
 
     @Override
     public String favorite(String pieces) {
+
         return pieces;
     }
 }
