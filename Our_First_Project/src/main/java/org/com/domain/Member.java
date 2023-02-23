@@ -1,17 +1,23 @@
 package org.com.domain;
 
 public class Member {
-    private int id;
+    private Long id;
     private String name;
     private String top;
-    private String bottom;
-    private String panties;
-    private String socks;
 
-    public int getId() {
+    private Color panties;
+
+    public Member(Long id, String name, String top, Color panties) {
+        this.id = id;
+        this.name = name;
+        this.top = top;
+        this.panties = panties;
+    }
+
+    public Long getId() {
         return id;
     }
-    public void setId(int id) { this.id = id;}
+    public void setId(Long id) { this.id = id;}
 
     public String getName() {
         return name;
@@ -27,37 +33,11 @@ public class Member {
         this.top = top;
     }
 
-    public String getBottom() {
-        return bottom;
-    }
-    public void setBottom(String bottom) {
-        this.bottom = bottom;
-    }
-
-    public String getPanties() {
+    public Color getPanties() {
         return panties;
     }
-    public void setPanties(String panties) {
+    public void setPanties(Color panties) {
         this.panties = panties;
-    }
-
-    public String getSocks() {
-        return socks;
-    }
-    public void setSocks(String socks) {
-        this.socks = socks;
-    }
-
-    @Override
-    public String toString() {
-        return "Member{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", top='" + top + '\'' +
-                ", bottom='" + bottom + '\'' +
-                ", panties='" + panties + '\'' +
-                ", socks='" + socks + '\'' +
-                '}';
     }
 
 }
